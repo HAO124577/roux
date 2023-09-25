@@ -1,0 +1,94 @@
+...<html>
+<head>
+    <style>
+        body {
+            background-color: var(--background-color); /* автоматически устанавливает фон в соответствии с настройками пользователя в телеграме */
+            color: var(--text-color); /* автоматически устанавливает цвет текста в соответствии с настройками пользователя в телеграме */
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        }
+        button {
+            display: block;
+            margin: 10px auto;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            margin: 10px;
+        }
+        input {
+            width: 200px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Professional bot</h1>
+    <p>Профессиональный бот обработает любой ваш запрос (в рамках возможного), цена очень варьируется, но в среднем это 15000₽. Для оформления заказа заполните форму ниже.</p>
+    <button onclick="document.getElementById('form').style.display='block'">ФОРМА</button>
+    <form id="form" style="display: none" action="https://example.com/send_form.php" method="POST">
+        <label for="telegram">Telegram tag:</label>
+        <input type="text" id="telegram" name="telegram" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="
+
+email" required> <button type=“submit”>Отправить</button> </form> </body> </html>
+
+`html
+<!-- subscribe.html -->
+<html>
+<head>
+    <style>
+        body {
+            background-color: var(--background-color); /* автоматически устанавливает фон в соответствии с настройками пользователя в телеграме */
+            color: var(--text-color); /* автоматически устанавливает цвет текста в соответствии с настройками пользователя в телеграме */
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        }
+        button {
+            display: block;
+            margin: 10px auto;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            margin: 10px;
+        }
+        input {
+            width: 200px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+  <h1>Subscribe</h1>
+    <p>Подпишитесь на нашу рассылку, чтобы получать самые свежие новости и акции о наших ботах. Введите свой email ниже и нажмите кнопку "Подписаться".</p>
+    <form action="https://example.com/subscribe.php" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Подписаться</button>
+    </form>
+</body>
+</html>
